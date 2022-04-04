@@ -20,7 +20,6 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Homepage />} />
           <Route path="/dashboard" element={<Dashboard />} />
 
           <Route
@@ -48,6 +47,7 @@ function App() {
           <Route path="/profile" caseSensitive={false} element={<Profile />} />
 
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/" element={<Homepage />} />
         </Routes>
       </Router>
     </>
