@@ -1,51 +1,39 @@
 # SE-project: Student Portal System
 ## Anubhab
 <ul>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+  <li>Frontend React: Routing and Naviation</li>
+  <li>Backend Django: Daily Life and profile, login, signup section </li>
+  <li>SRS doc</li>
 </ul>
 
 ## Swaugat
 <ul>
-  <li>First item</li>
+  <li>Native App</li>
   <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
 </ul>
 
 ## Bibhu
 <ul>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+  <li>Backend Django: Lost & Found</li>
+  <li>Backend Django: Lost & Found</li>
 </ul>
 
 ## Debashish
 
 <ul>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+  <li>Backend Django: Lost & Found</li>
+  <li>Backend Django: Lost & Found</li>
 </ul>
 
 ## Ausaf
 
 <ul>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+  <li>Frontend React: UI desiging and complete frontend building</li>
 </ul>
 
 ## Subhashree
 
 <ul>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+  <li>Frontend React: Components: </li>
+
 </ul>
