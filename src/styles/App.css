@@ -1,0 +1,10 @@
+.hero__component {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 240px);
+  left: 78px;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
