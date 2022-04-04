@@ -40,42 +40,103 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.paper {
-  margin: 10px 10px;
-  width: 400px;
-  height: 230px;
+/* Glassmorphism Styling starts */
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(120deg, #1d976c, #2c3e50);
 }
 
-/* Paper styling */
-
-.userDetails,
-.academics__details {
-  padding: 10px;
-  display: flex;
+.circles {
+  position: absolute;
   height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+  z-index: -1;
 }
 
-.leftPanel {
+.circle-1 {
+  height: 300px;
+  width: 300px;
+  top: 100px;
+  left: 50px;
+  opacity: 0.8;
+}
+
+.circle-2 {
+  height: 240px;
+  width: 240px;
+  top: 78px;
+  right: 100px;
+  opacity: 0.8;
+}
+
+.circle-3 {
+  height: 240px;
+  width: 240px;
+  bottom: 0px;
+  left: 100px;
+  opacity: 0.8;
+}
+
+.circle-4 {
+  height: 340px;
+  width: 340px;
+  top: 300px;
+  right: 300px;
+  opacity: 0.8;
+}
+
+.card {
+  height: 260px;
+  width: 420px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(35px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+  padding: 30px 30px 30px 30px;
+  overflow: hidden;
+  margin: 5px;
+  z-index: -1;
+}
+
+/* Glassmorphism Styling ends here */
+
+/* Cards Styling starts here */
+.user__section,
+.academics {
+  display: flex;
+}
+
+.left__panel {
   flex: 70%;
 }
-
-.rightPanel {
-  flex: 30%;
-}
-
-.userQuote {
-  margin-top: 50px;
-  text-overflow: ellipsis;
-}
-
-.academic__semester {
+.user__details {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.academic__semester__number {
-  font-weight: 500;
-  margin-left: 12px;
+.user__motivation {
+  margin-top: 30px;
 }
+
+.user__motivation__desc {
+  font-size: 14px;
+}
+
+.right__panel {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Cards styling ends here */

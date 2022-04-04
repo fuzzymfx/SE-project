@@ -20,7 +20,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/home" element={<Homepage />} />
 
           <Route
             path="/update-profile"
@@ -47,7 +47,7 @@ function App() {
           <Route path="/profile" caseSensitive={false} element={<Profile />} />
 
           <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Dashboard />} />
         </Routes>
       </Router>
     </>

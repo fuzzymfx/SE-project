@@ -1,9 +1,8 @@
 import React from "react";
 import "../styles/Dashboard.css";
+import User from "../assets/images/user.png";
 import Navbar from "../components/Navbar";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
 
 function toggleSidebar() {
   let sidebar = document.querySelector(".sidebar");
@@ -19,71 +18,125 @@ function Dashboard() {
       <div className="home_content">
         <h4>Dashboard</h4>
         <div className="papers">
-          <Paper elevation={4} className="paper">
-            <div className="userDetails">
-              <div className="leftPanel">
-                <div className="username">
-                  <h1>Hello Sam,</h1>
+          {/* Glassmorphism starts */}
+          <div class="circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+          </div>
+
+          <div className="card">
+            <div className="user__section">
+              <div className="left__panel">
+                <div className="user__details">
+                  <Avatar src={User} />
+                  <h3 className="user__name">Hello Sam,</h3>
                 </div>
-                <div className="userEmail">
-                  <p>username@gmail.com</p>
+                <div className="user__info">
+                  <div className="user__email">
+                    <p>username@example.com</p>
+                  </div>
                 </div>
-                <div className="userQuote">
-                  <h5>Todays Quote:</h5>
-                  <p className="userquote__description">
-                    Success is not final. Failute is not fatal. It is the
-                    courage to continue that counts.
+
+                <div className="user__motivation">
+                  <h5>Today's Quote: </h5>
+                  <p className="user__motivation__desc">
+                    Success is not final. Failure is not fatal. It's the courage
+                    to continue that counts.
                   </p>
                 </div>
               </div>
-              <div className="rightPanel">
-                <div className="userScore">
-                  <h2>Score</h2>
-                  <h3>85</h3>
-                </div>
+              <div className="right__panel">
+                <h4>Score</h4>
+                <p>85</p>
               </div>
             </div>
-          </Paper>
-          <Paper elevation={4} className="paper">
-            <div className="academics__details">
-              <div className="leftPanel">
-                <div className="academic__header">
-                  <h1>Academics,</h1>
-                </div>
-                <div className="academic__semester">
-                  <p className="academic__semester__title">Semester</p>
-                  <p className="academic__semester__number">6</p>
-                </div>
-                <div className="userQuote">
-                  <div className="userQuote">
-                    <h5>Assigned Subjects:</h5>
-                    <Button
-                      variant="outlined"
-                      className="academic__courses__btn"
-                    >
-                      View Courses
-                    </Button>
-                  </div>
+          </div>
+
+          <div className="card">
+            <div className="academics">
+              <div className="left__panel">
+                <div className="academic_header">
+                  <h2>Academics,</h2>
                 </div>
               </div>
-              <div className="rightPanel">
-                <div className="userScore">
-                  <h2>Impressive</h2>
-                  <h3></h3>
-                </div>
-              </div>
+              <div className="right__panel"></div>
             </div>
-          </Paper>
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
-          <Paper elevation={4} className="paper" />
+          </div>
+
+          <div className="card">
+            <h1>Time Table,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+
+          <div className="card">
+            <h1>Exam Schedule,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+
+          <div className="card">
+            <h1>Result,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+
+          <div className="card">
+            <h1>Official Mail,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+
+          <div className="card">
+            <h1>Practice School,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+
+          <div className="card">
+            <h1>Canteen,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+
+          <div className="card">
+            <h1>Online Quiz Exam,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+
+          <div className="card">
+            <h1>Dues,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+
+          <div className="card">
+            <h1>Feedback,</h1>
+            <p>
+              Succeess is not final. Failure is not fatal. Its the courage to
+              continue that counts.
+            </p>
+          </div>
+          {/* Glassmorphism ends here!! */}
         </div>
       </div>
     </>
