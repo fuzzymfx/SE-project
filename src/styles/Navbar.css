@@ -35,7 +35,8 @@ body {
   width: 100%;
   align-items: center;
   opacity: 1;
-  pointer-events: none;
+  /* pointer-events: none; */
+  cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
@@ -93,6 +94,7 @@ body {
   z-index: 99;
   color: #fff;
   font-size: 22px;
+  cursor: pointer;
   transition: all 0.5s ease;
 }
 

@@ -4,17 +4,17 @@ import User from "../assets/images/user.png";
 import Navbar from "../components/Navbar";
 import Avatar from "@mui/material/Avatar";
 
-function toggleSidebar() {
-  let sidebar = document.querySelector(".sidebar");
-  sidebar.classList.toggle("active");
-}
+// function toggleSidebar() {
+//   let sidebar = document.querySelector(".sidebar");
+//   sidebar.classList.toggle("active");
+// }
 
 function Dashboard() {
   return (
     <>
-      <div onClick={toggleSidebar} className="sidebar">
-        <Navbar />
-      </div>
+      {/* <div onClick={toggleSidebar} className="sidebar"> */}
+      <Navbar />
+      {/* </div> */}
       <div className="home_content">
         <h4>Dashboard</h4>
         <div className="papers">
