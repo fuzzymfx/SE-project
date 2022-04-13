@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'todos',
-    'frontend',
 ]
 ALLOWED_HOSTS = ['*']
 
