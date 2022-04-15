@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/login.css";
 import { useNavigate } from "react-router-dom";
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputAdornment from "@mui/material/InputAdornment";
+
 import LooneyStandOne from "../assets/images/looney/standone.png";
 import SpaceOne from "../assets/images/space/one.png";
 import SpaceTwo from "../assets/images/space/two.png";
 import SpaceThree from "../assets/images/space/three.png";
+
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ErrorIcon from "@mui/icons-material/Error";
+
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputAdornment from "@mui/material/InputAdornment";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LockIcon from "@mui/icons-material/Lock";
 import EmailIcon from "@mui/icons-material/Email";
@@ -21,17 +25,28 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import IconButton from "@mui/material/IconButton";
 
 export default function Login() {
-  const [values, setValues] = React.useState({
+  const [values, setValues] = useState({
     username: "",
     email: "",
     password: "",
     showPassword: false,
   });
 
+  const [validation, setValidation] = useState(true);
+
   let navigate = useNavigate();
   const navigateSignIn = () => {
     const path = "/signin";
     navigate(path);
+  };
+
+  const navigateSignUp = () => {
+    if (values.username == "" || values.email == "" || values.password == "") {
+      setValidation(false);
+    } else {
+      const path = "/homepage";
+      navigate(path);
+    }
   };
 
   const handleChange = (prop) => (event) => {
@@ -124,7 +139,7 @@ export default function Login() {
                     <EmailIcon />
                   </InputAdornment>
                 }
-                label="email "
+                label="email"
               />
             </FormControl>
 
@@ -158,9 +173,20 @@ export default function Login() {
               />
             </FormControl>
           </div>
-
           <div>
-            <button className="signup__button">Sign up</button>
+            {validation ? (
+              <></>
+            ) : (
+              <p className="validation__error">
+                <ErrorIcon className="login__validation__error" /> Enter a Valid
+                Email or Password!!
+              </p>
+            )}
+          </div>
+          <div>
+            <button onClick={navigateSignUp} className="signup__button">
+              Sign up
+            </button>
           </div>
         </div>
       </div>

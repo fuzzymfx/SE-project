@@ -3,7 +3,6 @@ import "../styles/App.css";
 import Navbar from "../components/Navbar";
 import Homepage from "./Homepage";
 import Login from "./Login";
-import Signup from "./Signup";
 import UpdateProfile from "./UpdateProfile";
 import Profile from "./Profile";
 import ForgotPassword from "./ForgotPassword";
@@ -40,8 +39,6 @@ function App() {
             }
           /> */}
           <Route path="/signin" caseSensitive={false} element={<Signin />} />
-
-          <Route path="/signup" caseSensitive={false} element={<Signup />} />
 
           <Route path="/login" caseSensitive={false} element={<Login />} />
 

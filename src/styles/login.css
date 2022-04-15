@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
 .login {
-  font-family: "Lato", sans-serif !important;
+  /* font-family: "Lato", sans-serif !important; */
 }
 
 .space__one {
@@ -75,18 +75,19 @@
 }
 
 .left__greetings > p {
-  font-family: "Lato", sans-serif !important;
   font-size: 40px;
+  font-weight: 600;
   margin-top: 150px;
+  color: #000;
   font-weight: bold !important;
 }
 
 .left__info > p {
-  font-family: "Lato", sans-serif !important;
-  font-size: 18px;
-  margin: 50px auto 0px auto;
+  font-size: 15px;
+  margin: 20px auto 0px auto;
   width: 60%;
   text-align: center;
+  color: #555455;
 }
 
 .siginIn__button {
@@ -96,12 +97,12 @@
   border: 1px solid #000;
   border-radius: 50px;
   cursor: pointer;
+  text-transform: uppercase;
   transition: all 0.4s ease;
 }
 .siginIn__button:hover {
   background: #000;
   color: white;
-  border: 1px solid #fff;
 }
 
 /* Right Panel Styling */
@@ -158,6 +159,18 @@
   color: #9a9b9b;
 }
 
+.validation__error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  margin: 10px auto 0 auto;
+}
+
+.login__validation__error {
+  margin-right: 7px;
+}
+
 .signup__button {
   margin: 40px auto;
   padding: 12px 50px;
@@ -165,11 +178,11 @@
   border: 1px solid #000;
   border-radius: 50px;
   cursor: pointer;
+  text-transform: uppercase;
   transition: all 0.4s ease;
 }
 
 .signup__button:hover {
   background: #000;
   color: white;
-  border: 1px solid #fff;
 }

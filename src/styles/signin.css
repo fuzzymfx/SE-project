@@ -1,0 +1,126 @@
+.signin__mains {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 700px;
+  width: 1400px;
+  border-radius: 8px;
+  background: rgba(254, 254, 254, 0.2);
+  backdrop-filter: blur(35px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin: 5px;
+  display: flex;
+}
+
+.signin__left {
+  flex: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftPanel__header {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 80px auto 20px auto;
+}
+
+.signin__social {
+  margin: 0 12px;
+  cursor: pointer;
+  color: #555455;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 7px !important;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  transition: all 0.4s ease !important;
+}
+
+.signin__desc {
+  font-size: 15px;
+  margin: 15px;
+  color: #9a9b9b;
+}
+
+.signin__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto 10px auto;
+}
+
+.signin__forgotlink {
+  color: #000;
+}
+
+.validation__error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  margin: 10px auto 0 auto;
+}
+
+.validation__errorIcon {
+  margin-right: 7px;
+}
+
+.signin__submit {
+  margin: 20px auto;
+  padding: 12px 50px;
+  background: white;
+  border: 1px solid #000;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.signin__submit:hover {
+  background: #000;
+  color: white;
+}
+
+/* Right panel Styling */
+
+.signin__right {
+  flex: 40%;
+  /* background: #05a77f57; */
+  background: linear-gradient(217deg, #05a77fa2, #05a77f44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin__right__header > p {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 240px auto 20px auto;
+}
+
+.signin__right__desc > p {
+  font-size: 15px;
+  margin: 0 auto 0px auto;
+  width: 60%;
+  text-align: center;
+  color: #555455;
+}
+
+.signin__right__signup__button {
+  margin: 40px auto;
+  padding: 12px 50px;
+  background: white;
+  border: 1px solid #000;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.signin__right__signup__button:hover {
+  background: #000;
+  color: white;
+}
