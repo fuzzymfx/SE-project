@@ -11,7 +11,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import SettingsIcon from "@mui/icons-material/Settings";
 import LogoutIcon from "@mui/icons-material/Logout";
-import { BrowserRouter as Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function toggleSidebar() {
   let btn = document.querySelector(".sidebar");
@@ -20,6 +20,11 @@ function toggleSidebar() {
 }
 
 function Navbar() {
+  let navigate = useNavigate();
+  const userLogout = () => {
+    let path = `/login`;
+    navigate(path);
+  };
   return (
     <>
       <div className="sidebar">
@@ -41,7 +46,7 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="#">
+            <a href="/">
               <DashboardIcon className="i" />
 
               <span className="links_name">Dashboard</span>
@@ -51,17 +56,17 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="#">
+            <a href="/homepage">
               <GroupIcon className="i" />
 
-              <span className="links_name">User</span>
+              <span className="links_name">HomePage</span>
             </a>
 
-            <span className="tooltip">User</span>
+            <span className="tooltip">Home</span>
           </li>
 
           <li>
-            <a href="#">
+            <a href="/chatpage">
               <ForumIcon className="i" />
 
               <span className="links_name">Messages</span>
@@ -134,8 +139,8 @@ function Navbar() {
 
                 <div className="job">Admin</div>
               </div>
+              <LogoutIcon onClick={userLogout} className="" id="log_out" />
             </div>
-            <LogoutIcon className="" id="log_out" />
           </div>
         </div>
       </div>

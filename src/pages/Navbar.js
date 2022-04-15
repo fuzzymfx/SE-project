@@ -11,7 +11,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import SettingsIcon from "@mui/icons-material/Settings";
 import LogoutIcon from "@mui/icons-material/Logout";
-import { BrowserRouter as Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function toggleSidebar() {
   let btn = document.querySelector("#btn");
@@ -41,18 +41,15 @@ export default function Navbar({ toggleSidebar }) {
 
             <span className="tooltip">Dashboard</span>
           </li>
+          <li>
+            <a href="/">
+              <DashboardIcon className="i" />
 
-          <Link to="/dashboard">
-            <li>
-              <a href="#">
-                <DashboardIcon className="i" />
+              <span className="links_name">Dashboard</span>
+            </a>
 
-                <span className="links_name">Dashboard</span>
-              </a>
-
-              <span className="tooltip">Dashboard</span>
-            </li>
-          </Link>
+            <span className="tooltip">Dashboard</span>
+          </li>
 
           <li>
             <a href="#">

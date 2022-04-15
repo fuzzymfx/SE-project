@@ -8,6 +8,8 @@ import UpdateProfile from "./UpdateProfile";
 import Profile from "./Profile";
 import ForgotPassword from "./ForgotPassword";
 import Dashboard from "./Dashboard";
+import ChatPage from "./ChatPage";
+import Signin from "./Signin";
 import {
   BrowserRouter as Router,
   Route,
@@ -20,8 +22,6 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/home" element={<Homepage />} />
-
           <Route
             path="/update-profile"
             element={
@@ -31,14 +31,15 @@ function App() {
             }
           />
 
-          <Route
+          {/* <Route
             path="/login"
             element={
               <IsLoggedIn redirectTo="/profile">
                 <Login />
               </IsLoggedIn>
             }
-          />
+          /> */}
+          <Route path="/signin" caseSensitive={false} element={<Signin />} />
 
           <Route path="/signup" caseSensitive={false} element={<Signup />} />
 
@@ -47,6 +48,9 @@ function App() {
           <Route path="/profile" caseSensitive={false} element={<Profile />} />
 
           <Route path="/forgot-password" element={<ForgotPassword />} />
+
+          <Route path="/chatpage" element={<ChatPage />} />
+          <Route path="/homepage" element={<Homepage />} />
           <Route path="/" element={<Dashboard />} />
         </Routes>
       </Router>

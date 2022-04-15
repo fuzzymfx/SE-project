@@ -237,7 +237,7 @@ body {
 .profile #log_out {
   position: absolute;
   left: 50%;
-  bottom: 5px;
+  /* bottom: 5px; */
   transform: translateX(-50%);
   min-width: 50px;
   line-height: 50px;
@@ -251,6 +251,7 @@ body {
 .sidebar.active .profile #log_out {
   left: 88%;
   background: none;
+  cursor: pointer;
 }
 
 /* Home Content Styling */
