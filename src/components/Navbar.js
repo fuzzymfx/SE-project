@@ -139,6 +139,8 @@ function Navbar() {
 
                 <div className="job">Admin</div>
               </div>
+            </div>
+            <div className="logout__details">
               <LogoutIcon onClick={userLogout} className="" id="log_out" />
             </div>
           </div>

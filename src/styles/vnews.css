@@ -1,0 +1,65 @@
+.vnews {
+  width: 22%;
+  height: 420px;
+  border-radius: 12px;
+  margin: 0 0px 40px 0px;
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Upper Panel */
+
+.vnews__newsfeedImage > img {
+  width: calc(100%);
+}
+
+/* Lower Panel */
+
+.vnews__lowerPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.vnews__newsHeader > p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.vnews__profiles {
+  margin: 30px auto 5px auto;
+  padding: 3px;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vnews__profileInfo {
+  display: flex;
+  align-items: center;
+}
+
+.vnews__postDesc {
+  margin-left: 10px;
+}
+
+.vnews__userName > p {
+  font-size: 15px;
+}
+
+.vnews__Date > p {
+  font-size: 12px;
+  color: #98a0a2;
+}
+
+.vnews__share {
+  margin-right: 10px;
+  cursor: pointer;
+}

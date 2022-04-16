@@ -53,7 +53,8 @@
 
 .mains__left {
   flex: 40%;
-  background: #05a77f57;
+  /* background: #05a77f57; */
+  background: linear-gradient(217deg, #05a77fa2, #05a77f44);
   backdrop-filter: blur(35px);
 }
 
