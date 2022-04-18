@@ -119,6 +119,7 @@ export default function Login() {
                 id="outlined-adornment-username"
                 value={values.username}
                 onChange={handleChange("username")}
+                autoComplete="name"
                 startAdornment={
                   <InputAdornment position="start">
                     <PersonOutlineIcon />
@@ -134,6 +135,7 @@ export default function Login() {
                 id="outlined-adornment-email"
                 value={values.email}
                 onChange={handleChange("email")}
+                autoComplete="username"
                 startAdornment={
                   <InputAdornment position="start">
                     <EmailIcon />

@@ -89,6 +89,7 @@ function Signin() {
                 id="outlined-adornment-email"
                 value={values.email}
                 onChange={handleChange("email")}
+                autoComplete="username"
                 startAdornment={
                   <InputAdornment position="start">
                     <EmailIcon />
