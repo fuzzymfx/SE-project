@@ -4,11 +4,6 @@ import User from "../assets/images/user.png";
 import Navbar from "../components/Navbar";
 import Avatar from "@mui/material/Avatar";
 
-// function toggleSidebar() {
-//   let sidebar = document.querySelector(".sidebar");
-//   sidebar.classList.toggle("active");
-// }
-
 function Dashboard() {
   return (
     <>
@@ -18,14 +13,6 @@ function Dashboard() {
       <div className="home_content">
         <h4>Dashboard</h4>
         <div className="papers">
-          {/* Glassmorphism starts */}
-          <div class="circles">
-            {/* <div class="circle circle-1"></div>
-            <div class="circle circle-2"></div>
-            <div class="circle circle-3"></div>
-            <div class="circle circle-4"></div> */}
-          </div>
-
           <div className="card">
             <div className="user__section">
               <div className="left__panel">

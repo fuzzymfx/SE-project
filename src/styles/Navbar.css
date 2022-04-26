@@ -168,6 +168,11 @@ body {
   text-align: center;
 }
 
+.navClass {
+  color: #11101d;
+  background: #fff;
+}
+
 .sidebar .links_name {
   opacity: 0;
   pointer-events: none;

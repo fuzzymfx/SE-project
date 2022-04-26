@@ -45,60 +45,9 @@
   flex-wrap: wrap;
   width: 100%;
 }
-
-/* Glassmorphism Styling starts */
-
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  background: linear-gradient(120deg, #1d976c, #2c3e50);
-}
-
-.circles {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  left: 0%;
-  /* transform: translate(-50%, -50%); */
-  z-index: -100;
-}
-
-.circle-1 {
-  height: 300px;
-  width: 300px;
-  top: 100px;
-  left: 50px;
-  opacity: 0.8;
-}
-
-.circle-2 {
-  height: 240px;
-  width: 240px;
-  top: 78px;
-  right: 100px;
-  opacity: 0.8;
-}
-
-.circle-3 {
-  height: 240px;
-  width: 240px;
-  bottom: 0px;
-  left: 100px;
-  opacity: 0.8;
-}
-
-.circle-4 {
-  height: 340px;
-  width: 340px;
-  top: 300px;
-  right: 300px;
-  opacity: 0.8;
-}
-
 .card {
   height: 260px;
-  width: 420px;
+  width: 410px;
   border-radius: 20px;
   background: rgba(253, 32, 32, 0.1);
   backdrop-filter: blur(35px);
@@ -106,8 +55,9 @@
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
   padding: 30px 30px 30px 30px;
   overflow: hidden;
-  margin: 5px;
+  margin: 9px;
   z-index: -1;
+  transition: all 0.4s ease;
 }
 
 /* Glassmorphism Styling ends here */

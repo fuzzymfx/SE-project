@@ -13,17 +13,18 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { useNavigate } from "react-router-dom";
 
-function toggleSidebar() {
-  let btn = document.querySelector(".sidebar");
-
-  btn.classList.toggle("active");
-}
-
 function Navbar() {
   let navigate = useNavigate();
+
   const userLogout = () => {
     let path = `/login`;
     navigate(path);
+  };
+
+  const toggleSidebar = () => {
+    let btn = document.querySelector(".sidebar");
+
+    btn.classList.toggle("active");
   };
   return (
     <>
