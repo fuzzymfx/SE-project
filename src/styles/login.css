@@ -54,7 +54,7 @@
 .mains__left {
   flex: 40%;
   /* background: #05a77f57; */
-  background: linear-gradient(217deg, #05a77fa2, #05a77f44);
+  background: linear-gradient(to top, #7ddff8, #b2acff);
   backdrop-filter: blur(35px);
 }
 
@@ -103,7 +103,7 @@
 }
 .siginIn__button:hover {
   background: #000;
-  color: white;
+  color: #fff;
 }
 
 /* Right Panel Styling */

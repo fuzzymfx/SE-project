@@ -89,7 +89,7 @@
 .signin__right {
   flex: 40%;
   /* background: #05a77f57; */
-  background: linear-gradient(217deg, #05a77fa2, #05a77f44);
+  background: linear-gradient(to top, #7ddff8, #b2acff);
   display: flex;
   flex-direction: column;
   align-items: center;
