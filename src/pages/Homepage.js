@@ -17,11 +17,6 @@ export default function Homepage() {
           <VNews />
           <VNews />
           <HNews />
-
-          <HNews />
-          <VNews />
-
-          <HNews />
         </div>
       </div>
     </>
