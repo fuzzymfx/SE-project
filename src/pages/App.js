@@ -9,12 +9,7 @@ import ForgotPassword from "./ForgotPassword";
 import Dashboard from "./Dashboard";
 import ChatPage from "./ChatPage";
 import Signin from "./Signin";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (

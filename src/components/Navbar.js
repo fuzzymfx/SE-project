@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
+import Alfred from "../assets/images/logo/alfred.png";
 import GoogleIcon from "@mui/icons-material/Google";
 import SearchIcon from "@mui/icons-material/Search";
 import DashboardIcon from "@mui/icons-material/Dashboard";
@@ -17,7 +18,7 @@ function Navbar() {
   let navigate = useNavigate();
 
   const userLogout = () => {
-    let path = `/login`;
+    let path = `/signin`;
     navigate(path);
   };
 
@@ -31,7 +32,8 @@ function Navbar() {
       <div className="sidebar">
         <div onClick={toggleSidebar} className="logo_content">
           <div className="logo">
-            <GoogleIcon className="bx bxl-xing" id="btn" />
+            <img src={Alfred} className="bx bxl-xing" id="btn" />
+            {/* <GoogleIcon className="bx bxl-xing" id="btn" /> */}
           </div>
         </div>
 

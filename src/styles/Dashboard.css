@@ -49,7 +49,7 @@
   height: 260px;
   width: 410px;
   border-radius: 20px;
-  /* background: linear-gradient(to left, #49aae2, #7fcec5); */
+  /* background: #49aae271; */
   backdrop-filter: blur(35px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
@@ -62,8 +62,9 @@
 }
 
 .card:hover {
-  background: rgba(211, 211, 211, 0.324);
-  transform: scale(1.03);
+  background: #e4eee9;
+  /* transform: scale(1.03); */
+  transform: perspective(1px) scale(1.03);
   z-index: 1;
 }
 
